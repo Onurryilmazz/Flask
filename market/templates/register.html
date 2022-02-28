@@ -16,6 +16,8 @@
         <div class="container">
 
             <form method="POST",class='form-register',style="color:white">
+
+                {{ form.hidden_tag() }}
                 <br>        
                 <img class="mb-4" src="https://i.ibb.co/4T77npz/onurlogo.png" alt="">
                     <h1 class="h3 mb-3 font-weight-normal">
@@ -29,9 +31,6 @@
 
                     {{ form.email_address.label() }}
                     {{ form.email_address(class='form-control',placeholder='Email Address') }}
-
-                    {{ form.username.label() }}
-                    {{ form.username(class='form-control',placeholder='User Name') }}
 
                     {{ form.password1.label() }}
                     {{ form.password1(class='form-control',placeholder='Password') }}
